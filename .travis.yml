@@ -5,6 +5,7 @@ branches:
     - master
 before_install:
     - pwd  
+    - node --version
 script: 
     - npm install
     - npm test

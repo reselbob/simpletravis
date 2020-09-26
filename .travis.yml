@@ -1,11 +1,12 @@
-language:  node_js
+language: node_js
+node_js:
+  - 14
 os: ubuntu
 branches:
     only:
     - master
 before_install:
     - pwd  
-    - node --version
 script: 
     - npm install
     - npm test

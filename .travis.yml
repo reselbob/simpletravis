@@ -1,0 +1,11 @@
+language: rust
+os: ubuntu
+branches:
+    only:
+    - master
+before_install:
+    - pwd
+    
+script: 
+    - npm install
+    - npm test

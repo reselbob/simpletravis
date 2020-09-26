@@ -1,11 +1,10 @@
-language: rust
+language:  node_js
 os: ubuntu
 branches:
     only:
     - master
 before_install:
-    - pwd
-    
+    - pwd  
 script: 
     - npm install
     - npm test

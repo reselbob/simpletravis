@@ -1,0 +1,19 @@
+{
+  "name": "simpletravis",
+  "version": "1.0.0",
+  "description": "A project to demonstrate Travis-CI capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reselbob/simpletravis.git"
+  },
+  "author": "Bob Reselman <reselbob@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reselbob/simpletravis/issues"
+  },
+  "homepage": "https://github.com/reselbob/simpletravis#readme"
+}

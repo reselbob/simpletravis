@@ -4,7 +4,7 @@
   "description": "A project to demonstrate Travis-CI capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/reselbob/simpletravis/issues"
   },
-  "homepage": "https://github.com/reselbob/simpletravis#readme"
+  "homepage": "https://github.com/reselbob/simpletravis#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
 }

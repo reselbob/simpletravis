@@ -1,5 +1,3 @@
-'use strict';
-
 const http = require('http');
 const port = process.env.APP_PORT || 3000;
 

@@ -12,4 +12,5 @@ script:
 - npm install
 - npm test
 env:
-  - TRAVIS_MESSAGE ="All Good Things Take Time"
+  global:
+    - TRAVIS_MESSAGE ="All Good Things Take Time"

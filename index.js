@@ -25,10 +25,10 @@ console.log(`Node HTTP listening on ${port}`);
 /** A function which handles requests and send response. */
 function handleRequest(request, response) {
     const message = process.env.TRAVIS_MESSAGE || `Hello at ${new Date()}`
-    const cheese = process.env.CHEESE;
+    const otherMessage = process.env.OTHER_MESSAGE;
     response.setHeader("Content-Type", "application/json");
     response.writeHead(200);
-    response.end(JSON.stringify({cheese, message}));
+    response.end(JSON.stringify({otherMessage, message}));
 }
 
 process.on('SIGTERM', function () {

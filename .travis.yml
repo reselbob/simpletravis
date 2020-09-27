@@ -7,6 +7,8 @@ branches:
   - master
 before_install:
 - pwd
+- if: env(TRAVIS_MESSAGE) = "All Good Things Take Time"
+  echo "OK"
 script:
 - npm install
 - npm test

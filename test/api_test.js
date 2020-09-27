@@ -11,8 +11,8 @@ describe('API Tests: ', () => {
     after(function () {
         shutdown();
     });
-    it('Can access GET item /', function(done){
-        //Go get all the lists
+    it('Can access GET at /', function(done){
+        //Call the API
         supertest(server)
             .get('/')
             .set('Accept', 'application/json')

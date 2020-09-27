@@ -12,4 +12,4 @@ script:
 - npm test
 env:
     global:
-    - SIMPLE_TRAVIS_MESSAGE="All Good Things Take Time"
+    - SIMPLE_TRAVIS_MESSAGE=""

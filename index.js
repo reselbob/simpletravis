@@ -24,7 +24,8 @@ console.log(`Node HTTP listening on ${port}`);
 
 /** A function which handles requests and send response. */
 function handleRequest(request, response) {
-    const message = process.env.SIMPLE_TRAVIS_MESSAGE || `Hello at ${new Date()}`
+    let message = `Hello at ${new Date()}`
+    if(process.env.SIMPLE_TRAVIS_MESSAGE) message = 'I cannot tell you.'
     response.setHeader("Content-Type", "application/json");
     response.writeHead(200);
     response.end(JSON.stringify({message}));

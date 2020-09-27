@@ -7,6 +7,7 @@ branches:
   - master
 before_install:
 - pwd
+- echo $TRAVIS_MESSAGE
 script:
 - npm install
 - npm test
